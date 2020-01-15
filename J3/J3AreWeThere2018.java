@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-J3;
-
 public class J3AreWeThere2018 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

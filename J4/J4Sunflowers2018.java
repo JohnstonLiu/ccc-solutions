@@ -16,7 +16,7 @@ public class J4Sunflowers2018 {
     public static boolean check(int[][] A, int n) {
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - 1; j++) {
-                if (A[i][j] > A[i][j + 1]) {
+                if (A[i][j] > A[i][j+ 1]) {
                     return false;
                 }
                 if (A[j][i] > A[j][i + 1]) {
