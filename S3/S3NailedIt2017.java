@@ -7,7 +7,7 @@ public class S3NailedIt2017 {
     public static void main(String[] args) {
         FastReader sc = new FastReader();
         int d = sc.nextInt();
-        int[] L = new int[2001];
+        int[] L = new int[2001];//Stores # of instances of each board length
         for (int i = 0; i < d; i++) {
             int x = sc.nextInt();
             L[x] += 1;
@@ -15,7 +15,7 @@ public class S3NailedIt2017 {
 
         int[] F = new int[4001];
         for (int i = 1; i < 2001; i++) {
-            if (L[i] > 1) {
+            if (L[i] > 1) {//If there is more than one instance | This settles duplicates
                 F[i * 2] += L[i] / 2;
             }
             for (int j = i + 1; j < 2001; j++) {
@@ -34,8 +34,8 @@ public class S3NailedIt2017 {
                 big = F[i];
             }
         }
-        //printStuff(L);
-        //printStuff(F);
+        printStuff(L);
+        printStuff(F);
 
         System.out.println(big + " " + counter);
     }
