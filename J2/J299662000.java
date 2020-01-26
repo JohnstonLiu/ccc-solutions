@@ -26,8 +26,9 @@ public class J299662000 {
                     }
                 }
                 //break goes here
-                if (s.length() % 2 == 1) {//Check if  I missed a 6 or 9 with my loop
-                    if (s.substring(s.length() / 2, s.length() / 2 + 1).equals("6") || s.substring(s.length() / 2, s.length() / 2 + 1).equals("9"))
+                if (s.length() % 2 == 1) {//Check if I missed a 6 or 9 with my loop
+                    String substring = s.substring(s.length() / 2, s.length() / 2 + 1);
+                    if (substring.equals("6") || substring.equals("9"))
                         b = false;
                 }
                 if (b || s.equals("1") || s.equals("8")) {
