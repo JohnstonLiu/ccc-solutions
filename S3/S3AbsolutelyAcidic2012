@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class S3AbsolutelyAcidic2012 {
     private static class FastReader {
         BufferedReader br;
         StringTokenizer st;

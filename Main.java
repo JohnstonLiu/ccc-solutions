@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class J5PiDay2015 {
+public class Main {
     static int[][][] dp;
 
     public static void main(String[] args) {
